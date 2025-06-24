@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        font-family: "Inter", sans-serif;
+        /* background-color: #e2e2e2; */
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 16px;
+        row-gap: 18px;
+        align-items: center;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.3);
+        padding: 12px;
+      }
+
+      .number,
+      .question,
+      .icon {
+        /* color: #087f5b; */
+        color: #343a40;
+        font-weight: 500;
+      }
+
+      .number {
+        color: #ced4da;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 32px;
+      }
+
+      .hidden-box ul {
+        margin-left: -20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .show-details {
+        border-top: 5px solid #087f5b;
+      }
+
+      .show-details .number,
+      .show-details .question,
+      .show-details .icon {
+        color: #087f5b;
+      }
+      .show-details .hidden-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="question">Where are these chair assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab odio
+            accusantium optio rerum est dicta perferendis. amet consectetur
+            adipisicing elit. Ab odio accusantium optio rerum est dicta
+            perferendis
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Eligendi commodi quaerat officia voluptas quia quas sed quod qui
+              blanditiis
+            </li>
+            <li>
+              adipisicing elit. voluptatibus esse aliquam ullam harum nesciunt
+              et, totam deserunt impedit perferendis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item show-details">
+        <p class="number">02</p>
+        <p class="question">How long do I have to return my chair</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab odio
+            accusantium optio rerum est dicta perferendis. amet consectetur
+            adipisicing elit. Ab odio accusantium optio rerum est dicta
+            perferendis
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Eligendi commodi quaerat officia voluptas quia quas sed quod qui
+              blanditiis
+            </li>
+            <li>
+              adipisicing elit. voluptatibus esse aliquam ullam harum nesciunt
+              et, totam deserunt impedit perferendis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">03</p>
+        <p class="question">Do you ship to countries outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab odio
+            accusantium optio rerum est dicta perferendis. amet consectetur
+            adipisicing elit. Ab odio accusantium optio rerum est dicta
+            perferendis
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Eligendi commodi quaerat officia voluptas quia quas sed quod qui
+              blanditiis
+            </li>
+            <li>
+              adipisicing elit. voluptatibus esse aliquam ullam harum nesciunt
+              et, totam deserunt impedit perferendis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
